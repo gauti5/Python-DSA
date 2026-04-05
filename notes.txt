@@ -1,0 +1,118 @@
+# Constant Time O(1) -> Example : fetching directly occuring only one process
+# Linear Time O(n) -> Example : printing all elements from an array (traversing each element) (For Loop)
+# Quadratic Time O(n^2) -> Example : Double or Nested for loop Example
+# Logarithmic Time O(logn) -> Example : between O(1) and O(n) priting only 5 elements from 10 elements
+# Exponential Time O(2n) -> double of any task (2X, 4X, 3X)
+
+
+
+## Array -> An array is a data structures that stores a collection of elements of same type in a
+contigous memory
+
+Time Complexities :
+
+1. Access -> O(1)
+2. Search (Unsorted) -> O(n)
+3. Insertion/Deletion (end) -> O(1)
+4. Insertion/Deletion (Middle) -> O(n)
+5. Sorting -> O(nlogn)
+
+## 2D Array -> A grid like structure where data stored in rows and columns
+
+1. Access -> O(1)
+2. Traversal -> 0(mxn)
+
+
+# Hashing -> process of mapping data from large domain (like string or numbers) to a smaller.
+A fixed value called hash code
+
+-> This is done using hash function, allows for efficent lookups, insertion, deletion
+
+1. HashMap -> collection of key-value pair {dictionary in Python}, key is unique and each key is associated with specified value.
+2. HashSet -> {set in Python} Collection of Unique elements. It doesnt store as key:value pair, instead it only store the key themselves (the values)
+
+
+# Bubble Sort -> bubble sort is simplest sorting algorithm that works by repeatly swapping adjancent elements
+
+arr=[12,23,34,5,4]
+itr-1 :
+find largest number and swap with adjancent 
+[12, 23, 5, 34, 4]
+[12, 23, 5, 4, 34]
+
+itr - 2:
+[12, 5, 23, 4, 34]
+[12, 5, 4, 23, 34]
+
+itr - 3:
+[5, 12, 4, 23, 34]
+[5, 4, 12, 23, 34]
+
+itr - 4:
+[4, 5, 12, 23, 34]
+
+# Selection Sort -> Comparsion based sorting, it sorts repeatedly selecting the smallest element
+
+arr=[12,23,34,5,4]
+itr - 1 : smallest =4, current=12
+[4, 23, 34, 5, 12]
+
+itr - 2: current=23, samllest=5
+[4, 5, 34, 23, 12]
+
+itr - 3: current = 34, smallest=12
+[4,5,12,23,34] -> output
+
+## Linked List
+
+-> Linked list is type of datastructures used to store elements in a linear order. unlike an array,
+which stores elements in continous memory locations, a linked list stores elements at random memory
+location and connects them using pointers.
+
+each element in a linked list is called a node, and each node contains:
+Data (the actual value)
+Pointer (or link) to the next node in the list.
+
+Types of linked list:
+
+1. Singly linked list
+each node has:
+Data
+pointer to the next node
+
+2. Doubly Linked List
+Each node has:
+Data 
+pointer to the next node
+pointer to the previous node
+
+3. Circular Linked List
+In Circular Singly linked List, Last Node points backs to the first node
+In Circular doubly linked List, both last and first nodes are linked to each other in both directions
+
+
+## Stack :
+
+-> Stack follows LIFO (last in first out)
+-> A stock works like stack of plates in your kitchen  (The last plate you place on top is the first one you pick)
+
+# Main Operations
+
+Push -> add an element to the top -> O(1)
+pop -> remove the top elements -> O(1)
+peek/top -> view the top element without removing it -> O(1)
+isEmpty -> check if the stack is empty or not -> O(1)
+
+
+## Queue : 
+
+Queue follows FIFO [First in First Out], this means the first element added to the queue will be the first one to be removed.
+
+Example : Just like people standing in a line for cinema ticket
+
+# Main Operations :
+
+Enqueue [add] -> add an element to the back of queue
+Dequeue [remove] -> remove an element from the front of the queue.
+Front [peek] : View the element at the front without removing it
+isEmpty : check if the queue is empty
