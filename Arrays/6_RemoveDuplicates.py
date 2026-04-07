@@ -12,4 +12,3 @@ def sorted_array(arr):
 
 arr=[1,2,2,3,4,4,4,5,6,6,6,6,7]
 print(f"Duplicates : {sorted_array(arr)}")
-    
