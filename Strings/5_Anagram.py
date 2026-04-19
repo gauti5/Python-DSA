@@ -1,11 +1,12 @@
-# Valid Anagram (leetcode - Q242)
+def group_anagram(strs):
+    anagram={}
+    for word in strs:
+        key=''.join(sorted(word))
+        if key not in anagram:
+            anagram[key]=[]
+        anagram[key].append(word)
+    return anagram
 
-def anagram(s,t):
-    
-    # Brute Force
-    return sorted(s)==sorted(t)
 
-s='anagram'
-t='nagarams'
-
-print(anagram(s,t))
+strs=['eat', 'bat', 'tea', 'ate', 'atb', 'ten']
+print(group_anagram(strs))
